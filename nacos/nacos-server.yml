@@ -51,7 +51,7 @@ spec:
       containers:
         - name: nacos
           imagePullPolicy: IfNotPresent
-          image: nacos/nacos-server:latest
+          image: nacos/nacos-server:1.1.4
           resources:
             requests:
               memory: "1.5Gi" # 官方是2Gi，迫于虚机内存压力，我改为了1.5Gi，实际生产环境你可以调大一点，避免OOM
